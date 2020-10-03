@@ -160,7 +160,7 @@ void makeclass::make_header(std::string const &path, bool cpy, bool mv)
             % class_name
             % additional_methods;
 
-        file_writer << "\n}\n" << "#endif\n";
+        file_writer << ((_namespace == "") ? "\n#endif\n" : "\n}\n#endif\n");
     }
 }
 
