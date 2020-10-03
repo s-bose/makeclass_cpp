@@ -29,16 +29,19 @@ and
 
 These create additional copy & move constructors and assignment operator overloads for the class.
 The files generated are:
-    1. class.h          // main header file
-    2. class.ih         // internal header file
-    3. class1.cc        // default constructor file
-    4. desctructor.cc   // destructor file
-
+```
+1. class.h          // main header file
+2. class.ih         // internal header file
+3. class1.cc        // default constructor file
+4. desctructor.cc   // destructor file
+```
 additionally, if copy and move supports are specified:
-    5. class2.cc        // copy constructor file
-    6. class3.cc        // move constructor file
-    7. operator1.cc     // assignment operator file (for copy)
-    8. operator2.cc     // assignment operator file (for move)
+```
+5. class2.cc        // copy constructor file
+6. class3.cc        // move constructor file
+7. operator1.cc     // assignment operator file (for copy)
+8. operator2.cc     // assignment operator file (for move)
+```
 
 <br/>
 
