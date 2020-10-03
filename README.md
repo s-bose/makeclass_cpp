@@ -1,12 +1,26 @@
-## makeclass is a C++ program to build skeleton directory for C++ classes.
+## **makeclass**
+makeclass is a C++ program to build skeleton directory for C++ classes.
 
 
 ## **Build**: 
 
 Use `make` to build the executable.
-Run `./makeclass` to generate C++ class files (see below)
 
-<br/>
+Run `./makeclass` to generate C++ class files (see below).
+
+Use `make clean` for cleanup.
+
+**Additionally: adding to path**
+
+for UNIX and Linux, open a terminal from home and run
+
+`vi .bash_profile`
+
+then add the following line at the end and save.
+
+`export PATH=$PATH:<path-to-the-executable>`
+
+now you will be able to use `makeclass` command from anywhere.
 
 ## **Usage**:
 

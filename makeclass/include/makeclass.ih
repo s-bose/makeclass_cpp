@@ -1,9 +1,8 @@
 #include "makeclass.h"
 
-#include <boost/format.hpp>
-
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <string>
 #include <filesystem>
 #include <algorithm>
