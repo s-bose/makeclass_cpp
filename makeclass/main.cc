@@ -10,7 +10,7 @@ int main(int argc, char **argv)
         case 1:
         default:
             usage(std::string(argv[0]));
-            break;
+            return 1;
         case 2:
             class_name = argv[1];
             break;
@@ -25,5 +25,23 @@ int main(int argc, char **argv)
 
 void usage(std::string &&program_name)
 {
-    std::cout << "usage: " << program_name << " class" << "[namespace]" ;
+    std::cout << "usage: " << program_name << " class" << " [namespace]\n";
+    std::cout << R"(
+    class       : name of the class
+    namespace   : (optional) custom namespace for the class
+
+    generates a list of files for the given class name.
+    these files are:
+    1. class.h          // main header file
+    2. class.ih         // internal header file
+    3. class1.cc        // default constructor file
+    4. desctructor.cc   // destructor file
+
+    additionally, if copy and move supports are specified:
+    5. class2.cc        // copy constructor file
+    6. class3.cc        // move constructor file
+    7. operator1.cc     // assignment operator file (for copy)
+    8. operator2.cc     // assignment operator file (for move)
+    )" << '\n';
+
 }

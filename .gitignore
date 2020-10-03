@@ -5,5 +5,8 @@
 .DS_Store
 .DS_Store/
 
+*.o
+*.out
+
 makeclass_bloated
 ./makeclass_bloated
