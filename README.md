@@ -45,7 +45,6 @@ additionally, if copy and move supports are specified:
 
 <br/>
 
-## **Dependencies**
+## **Important**
 
-This requires the [Boost](https://www.boost.org/users/download/) library for C++ 
-
+This program uses features from c++11 standard or more, so please make sure your g++ or clang++ compiler is up-to-date.
