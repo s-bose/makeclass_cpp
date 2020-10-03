@@ -4,3 +4,6 @@
 
 .DS_Store
 .DS_Store/
+
+makeclass_bloated
+./makeclass_bloated

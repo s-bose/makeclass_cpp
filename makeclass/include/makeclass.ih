@@ -1,9 +1,10 @@
 #include "makeclass.h"
 
 #include <boost/format.hpp>
-#include <boost/algorithm/string.hpp>
 
-#include <fstream>
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <filesystem>
+#include <algorithm>
+#include <cctype>
